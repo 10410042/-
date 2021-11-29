@@ -1,0 +1,33 @@
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
+using namespace std;
+
+int strlenn(int x)
+{
+	return x;
+}
+
+int main()
+{
+	char a = 0;
+	cout << "輸入英文或數字：";
+	cin >> a;
+	char ch = toupper(a), ah = tolower(a);
+	while (ch <= 90 && ch >= 65)
+	{
+		cout << "大寫英文：" << ch << "\n小寫英文：" << ah;
+		cout << "\n[" << a << "]ASCII為：" << strlenn(a);
+		cout << "\n[" << ch << "]ASCII為：" << strlenn(ch);
+		return 0;
+	}
+	while (ch <= 122 && ch >= 97)
+	{
+		cout << "大寫英文：" << ch << "\n小寫英文：" << ah;
+		cout << "\n[" << a << "]ASCII為：" << strlenn(a);
+		cout << "\n[" << ch << "]ASCII為：" << strlenn(ch);
+		return 0;
+	}
+	cout << "\n[" << a << "]ASCII為：" << strlenn(a);
+	cout << "\n[" << ch << "]ASCII為：" << strlenn(ch);
+}
